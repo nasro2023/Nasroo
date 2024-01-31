@@ -1,0 +1,85 @@
+body{
+    background-color: green;
+}
+h1{
+    color: rgb(120, 0, 249);
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.sky{
+    height: 200px;
+    width: 100%;
+    padding-top: 0;
+}
+.dz{
+    transform: rotateZ(40deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 30%;
+    height: 180px;
+    animation: dzz 10s  ease-in-out;
+
+}
+@keyframes dzz {
+    0%{
+        transform: rotateY(15deg);
+    }
+    30%{
+        transform: translate(0 ,450px);
+    }
+    50%{
+        transform: translate(200px, 450px);
+    }
+    70%{
+        transform: translate(200px, 60px);
+    }
+    80%{
+        transform: translate(900px, 60px);
+    }
+    90%{
+        transform: translate(900px, 480px);
+ 
+    }
+    100%{
+        transform: translate(900px,0px); 
+    }
+}
+.ma{
+    position: relative;
+    z-index: 1;
+    width: 20%;
+    padding-left: 200px;
+    padding-top: 150px;
+    animation: maa 6s 5.5s  ease-in-out;
+
+}
+@keyframes maa {
+    0%{
+        transform: translate(0 , 0);
+    }
+    10%{
+        transform: translate(0,-400px);
+    }
+    50%{
+        transform: translate(700px,-400px);
+    }
+    60%{
+        transform: translate(700px,0px);
+    }
+    95%{
+        transform: translate(700px,0px);
+    }
+    100%{
+        transform: translate(700px,0px);
+    }
+    
+}
+.aeroport{
+    width: 35%;
+    position: relative;
+    top: -250px;
+    left: 800px;
+}
